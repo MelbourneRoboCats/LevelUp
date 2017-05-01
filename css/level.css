@@ -1,0 +1,21 @@
+* {
+	font-family: sans-serif;
+}
+wikiFormat {
+	white-space: pre;
+}
+#navigator {
+	width: 99%;
+	XXXborder: 1px dotted orange;
+}
+#navigator div[id^="nav"] {
+	width: 49%;
+	XXXborder: 1px dotted red;
+	display: inline-block;
+}
+#navigator #navNext {
+	text-align: right;
+}
+#navigator div[id^="nav"] span {
+	color: silver;
+}
