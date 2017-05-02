@@ -55,6 +55,7 @@ h1 {
 	background-size: 1200px auto;
 	min-height: 450px;
 	color: white;
+	position: relative;
 }
 #header .contentSectionWrapper a {
 	color: white;
