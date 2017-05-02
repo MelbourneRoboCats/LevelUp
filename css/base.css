@@ -49,9 +49,11 @@ h1 {
 /* =Structures -------------------------------------------------------------- */
 #header .contentSectionWrapper {
 	background-color: #3a2e81;
-	background: #3a2e81 url("../img/logoRoboCatsLarge.png") no-repeat 10px 5px;
-	background-size: 100px auto;
-	min-height: 130px;
+	XXXbackground: #3a2e81 url("../img/logoRoboCatsLarge.png?fds") no-repeat 10px 5px;
+	XXXbackground-size: 100px auto;
+	background: #3a2e81 url(../img/heroTeamFirstSign.png) no-repeat 0px -55px;
+	background-size: 1200px auto;
+	min-height: 450px;
 	color: white;
 }
 #header .contentSectionWrapper a {
