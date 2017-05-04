@@ -9,6 +9,8 @@ function initPage() {
 
 function initNavigator() {
 	var sOut = "";
+	sOut += "<div><a href=\"../index.htm\">Home</a>";
+	sOut += "</div>";
 	sOut += "<div id=\"navPrev\">";
 	if (iLevelNr == 1) {
 		sOut += "<span>&lt; Previous</span>";

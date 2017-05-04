@@ -23,10 +23,27 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-margin-after: 0;
 	display: inline-block;
 	margin: 1px 0 5px 0;
+	font-family: 'Planer-Regular', sans-serif;
 }
 h1 {
 	font-size: 23pt;
 	color: #3a2e81;
+}
+h3 {
+	font-size: 30pt;
+}
+h4 {
+	font-size: 25pt;
+}
+button {
+	padding: 5px 10px;
+	background-color: purple;
+	border-radius: 3px;
+	border: 1px solid black;
+	color: white;
+	font-size: 14pt;
+	font-family: 'Planer-Regular', sans-serif;
+	letter-spacing: 1px;
 }
 /* =Color -------------------------------------------------------------- */
 #header {
@@ -51,7 +68,8 @@ h1 {
 	background-color: #3a2e81;
 	XXXbackground: #3a2e81 url("../img/logoRoboCatsLarge.png?fds") no-repeat 10px 5px;
 	XXXbackground-size: 100px auto;
-	background: #3a2e81 url(../img/heroTeamFirstSign.png) no-repeat 0px -55px;
+	XXXbackground: #3a2e81 url(../img/heroTeamFirstSign.png) no-repeat 0px -55px;
+	background: #3a2e81 url(../img/heroTeamHouston_high.jpg) no-repeat 0px -55px;
 	background-size: 1200px auto;
 	min-height: 450px;
 	color: white;
@@ -61,7 +79,8 @@ h1 {
 	color: white;
 }
 .contentSectionWrapper {
-	max-width: 1200px;
+	max-width: 1000px;
+	min-width: 800px;
 	margin: 0 auto;
 	padding: 1em;
 	XXXborder: 1px dotted orange;
@@ -80,6 +99,8 @@ h1 {
 #branding {
 	padding: 13px 0 0 125px;
 }
-.site-title {
-	font-size: 30pt;
+.site-title a {
+	font-size: 40pt;
+   letter-spacing: -1px;
+	font-family: 'Planer-Regular', sans-serif;
 }
