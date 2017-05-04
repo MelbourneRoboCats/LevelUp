@@ -45,6 +45,9 @@ button {
 	font-family: 'Planer-Regular', sans-serif;
 	letter-spacing: 1px;
 }
+td {
+	vertical-align: top;
+}
 /* =Color -------------------------------------------------------------- */
 #header {
 	XXXbackground: #cccccc;
