@@ -24,10 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	margin: 1px 0 5px 0;
 	font-family: 'Planer-Regular', sans-serif;
+	color: #3a2e81;
+	color: #777;
+
 }
 h1 {
 	font-size: 23pt;
-	color: #3a2e81;
 }
 h3 {
 	font-size: 30pt;
@@ -69,12 +71,14 @@ td {
 /* =Structures -------------------------------------------------------------- */
 #header .contentSectionWrapper {
 	background-color: #3a2e81;
+	/*
 	XXXbackground: #3a2e81 url("../img/logoRoboCatsLarge.png?fds") no-repeat 10px 5px;
 	XXXbackground-size: 100px auto;
 	XXXbackground: #3a2e81 url(../img/heroTeamFirstSign.png) no-repeat 0px -55px;
-	background: #3a2e81 url(../img/heroTeamHouston_high.jpg) no-repeat 0px -55px;
-	background-size: 1200px auto;
-	min-height: 450px;
+	*/
+	background: #3a2e81 url(../img/heroTeamHouston_high.png) no-repeat 0px -25px;
+	background-size: 1100px auto;
+	min-height: 445px;
 	color: white;
 	position: relative;
 }
@@ -82,7 +86,7 @@ td {
 	color: white;
 }
 .contentSectionWrapper {
-	max-width: 1000px;
+	max-width: 1100px;
 	min-width: 800px;
 	margin: 0 auto;
 	padding: 1em;
