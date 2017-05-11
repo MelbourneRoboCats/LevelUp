@@ -19,3 +19,7 @@ wikiFormat {
 #navigator div[id^="nav"] span {
 	color: silver;
 }
+#header .contentSectionWrapper {
+	background: #3a2e81 url(../img/heroTeamAll.jpg) no-repeat 0px -25px;
+	background-size: 1100px auto;
+}

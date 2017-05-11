@@ -51,16 +51,12 @@ td {
 	vertical-align: top;
 }
 /* =Color -------------------------------------------------------------- */
-#header {
-	XXXbackground: #cccccc;
-}
-#main {
-	XXXbackground: #dddddd;
-}
-#sponsorLogosWrapper {
-	XXXborder: 1px dotted silver;
-	XXXbackground-color: white;
-	XXXtext-align: center;
+/*
+#header {}
+#sponsorLogosWrapper {}
+*/
+#main, #footer {
+	position: relative;
 }
 #sponsorLogosWrapper img {
 	width: 13%;

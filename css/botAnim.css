@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#field {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	XXXborder: 3px dotted orange;
+}
+#bot {
+	position: absolute;
+	top: 0px;
+	left: -200px;
+	z-index: 100;
+	/*
+	-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+	 this.getRot = function(iAng){
+	 var sB = "transform: rotate(";
+	 var sA = "deg);";
+	 return "rotation:"+iAng+"deg;"+sB+iAng+sA+"-ms-"+sB+iAng+sA
+		 +"-webkit-"+sB+iAng+sA+"-moz-"+sB+iAng+sA+"-o-"+sB+iAng+sA;
+ }
+ transition: 			top ease-in-out 2s, left ease-in-out 2s;
+ -webkit-transition: 	top ease-in-out 2s, left ease-in-out 2s;
+
+	*/
+
+	-webkit-transition:	top ease-in-out 2s, left ease-in-out 2s, transform ease-in-out 0.56s;
+	-moz-transition:		top ease-in-out 2s, left ease-in-out 2s, transform ease-out 0.56;
+	-o-transition:			top ease-in-out 2s, left ease-in-out 2s, transform ease-out 0.56;
+	-ms-transition:		top ease-in-out 2s, left ease-in-out 2s, transform ease-out 0.56;
+	transition: 			top ease-in-out 2s, left ease-in-out 2s, transform ease-in-out 0.56;
+
+
+	rotation-point:50% 50%;
+	transform-origin:50% 50%;
+	-ms-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	-o-transform-origin:50% 50%;
+
+
+
+	XXXwidth: 20px;
+}

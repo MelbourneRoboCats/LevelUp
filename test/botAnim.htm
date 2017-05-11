@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Melbourne RoboCats LevelUp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/botAnim.css" />
+<script type="text/javascript" src="../js/botAnim.js"></script>
+</head>
+<body onload="botAnim.init().start();">
+	<button onclick="botAnim.drive(300, 200);">Move</button>
+	<button onclick="botAnim.drive(100, 40);">Move</button>
+	<button onclick="botAnim.drive(200, 600);">Move</button>
+	<button onclick="botAnim.drive(900, 0);">Move</button>
+	<button onclick="botAnim.drive(0, 0);">Move</button>
+	<div id="field" style="border: 3px dotted orange;">
+		<div id="bot"><img src="../img/imgBotAnim.gif"/></div><!--#bot-->
+	</div><!--#field-->
+</body>
+</html>

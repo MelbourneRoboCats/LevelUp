@@ -6,12 +6,19 @@
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/fontPlanerRegular.css" charset="utf-8" />
 <script type="text/javascript" src="js/base.js"></script>
+<!-- Robot Animation -->
+<link rel="stylesheet" type="text/css" href="css/botAnim.css" />
+<script type="text/javascript" src="js/botAnim.js"></script>
+<!-- // Robot Animation -->
 </head>
-<body>
+<body onload="botAnim.init();">
+	<div id="field">
+		<div id="bot"><img src="img/imgBotAnim.gif"/></div><!--#bot-->
+	</div><!--#field-->
 	<div id="page">
 		<div id="header" class="site-header">
 			<div class="contentSectionWrapper">
-				<img src="img/logoRoboCatsLarge.png" style="width: 100px;position: absolute;top:30px;left:30px;display: inline-block;" />
+				<img src="img/logoRoboCatsLarge.png" style="width: 100px;position: absolute;top:30px;left:30px;display: inline-block;" onclick="botAnim.start();" />
 				<!--img src="img/logoFirst.svg" style="width: 100px;position: absolute;top:30px;right:30px;display: inline-block;" /-->
 				<img src="img/imgAwardRibbon.png" style="XXXwidth: 100px;position: absolute;top:0px;right:40px;display: inline-block;" />
 				<div id="branding" role="banner">
@@ -66,5 +73,6 @@
 		</div><!--#footer-->
 
 	</div><!--#page-->
+
 </body>
 </html>
