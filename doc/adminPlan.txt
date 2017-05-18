@@ -1,0 +1,218 @@
+Hi Milorad and Therese,
+
+Thank you both once again for all your time and help with the robotics. The girls get an enormous amount out of it, so I believe your time is well invested. :)
+
+Bec and I have some questions regarding the "LevelUp" RoboCat induction programme she is creating.
+
+We had discussed using a virtual or real (hardware) robot, and since the roboRIO is available, we have some questions specifically around using (preferred option) of a hardware robot.
+
+@Therese: Milorad and I agreed that Bec and I will compile this list of questions. We are happy to phone to get responses if that saves you time.
+
+
+Overview:
+What would be our first steps to building a *very* basic robot using the roboRIO? In other words a robot that can drive forward / backwards and steer via a joystick controller.
+
+
+Helpers:
+We imagine we would need somebody to help initially, who understands how the components work together. Who would you suggest we ask to help?
+We understand how busy you two are, hence we are avoiding asking you directly for help.
+We are more than happy to make this an open-source, team project if others are happy to get involved.
+
+
+Location:
+Is it best to ask Swinburne Uni if we can use their labs?
+Who should approach them?
+
+
+Additional parts:
+I imagine we may also require basics such as:
+	wires
+	wheels
+	laptop
+	controller (joystick etc)
+	timber
+We are happy to contribute to some of the costs, but are there any means by which we can borrow or otherwise creatively obtain some of these items?
+What general advice do you have on getting hold of materials while maintaining great relationships with other organizations etc?
+
+
+Partnerships:
+We will be speaking to you before contacting any partners such as Swinburne. It is a long way off yet, but we will also seek your approval on any materials we publish.
+
+
+Thanks in advance for your help,
+David and Rebecca
+
+
+2017-04-30 16:24 GMT+10:00 Milorad Cerovac <milorad.cerovac@kds.vic.edu.au>:
+Many thanks David, Bec.
+
+Therese and I have spoken about building two identical robots previously and we are looking at doing so for next year's comp. The stumbling block in the past has been a lack of critical parts (eg roboRIO which is very expensive, radio, PDP, and VRM). I've offered Therese the AI Robotics roboRIO and radio for next year, and have acquired the others by rather creative means, so that we will in theory be able to build two identical bots. Other teams, especially the veteran teams have much larger budgets and are thus able to do so quite easily.
+
+Just to give you a heads up ... on Sunday 7th May I'm heading off to Jabiru to run a robotics program for an indigenous school for one week. I've been told not to expect any internet access, so I'll have to apologise in advance if I am unable to respond to any emails during that time, but do feel free to share ideas with Therese and cc me as we do appreciate everything that you and Bec are doing.
+
+Much appreciated and best regards
+Milorad
+
+
+
+
+
+
+
+On Sat, Apr 29, 2017 at 8:01 PM, David Wyss <david.wyss@gogs.net> wrote:
+I hope you are feeling better again soon. Sometimes I think my body is telling me to slow down when I get ill. It has been a busy time.
+
+That is great news about the cRIO kit. That will bring it all to life. We plan to make a video / slideshow overview first, and later get down to the nuts and bolts (literally) with the bot.
+
+Interestingly, speaking to a few other teams,  i found out that the top teams build multiple identical bots to practice driving in the off season.
+
+Can't wait to get started. We will contact you and Therese soon.
+
+Thanks,
+David and Rebecca.
+
+
+Am Samstag, 29. April 2017 schrieb Milorad Cerovac :
+Hi David
+
+
+
+
+
+I had a great time as well though I've been struck down with the flu since Thursday and am still struggling. I've just been sleeping and drinking fluids. 😢
+
+
+
+
+
+I'd suggest that as soon as Bec has all the questions then forward to me and Therese. A few months ago I picked up from BAE Systems a robot training kit which we were intending on using for training purposes, similar to Bec's idea. The only thing is that it uses a cRIO rather then a roboRIO. The cRIO is the predecessor to the roboRIO. The kit has all the electronics connected with motor controllers and motors so would still be very useful for teaching programming an FRC robot.
+
+
+
+
+
+This years robot will be used for demo purposes but we are in the process of purchasing additional electronics to be able to construct a second robot.
+
+
+
+
+
+Cheers
+
+
+Milorad
+
+
+
+
+
+
+
+
+Sent from my iPhone
+
+
+
+
+
+> On 28 Apr 2017, at 1:42 pm, David Wyss <david.wyss@gogs.net> wrote:
+
+
+>
+
+
+> Hi Milorad,
+
+
+>
+
+
+> I hope you had a great time in Houston. We loved it.
+
+
+>
+
+
+> I am writing to ask a very quick question. As you may recall, Bec is creating
+
+
+> a course designed to educate new RoboCat team members and make them
+
+
+> feel at home. The first session is online, designed to educate as well as create
+
+
+> interest in joining. Subsequent sessions are with a mentor or senior RoboCat.
+
+
+>
+
+
+> She needs to ask a number of questions, which she is collating right now.
+
+
+> Once she has the list of questions completed, how should she engage you?
+
+
+>
+
+
+> Some questions are pretty complex, such as "is there a robotics kit we can get
+
+
+> to teach the skills required for the full FRC robot?".
+
+
+>
+
+
+> Perhaps we could email you the list, then call you to go through them.
+
+
+>
+
+
+> As we progress, we will check with Therese and a few others to make sure that
+
+
+> the content we produce is in line with the message the team wants to present.
+
+
+>
+
+
+>
+
+
+> : )
+
+
+> David
+
+
+
+
+--
+: )
+David
+
+
+
+
+
+
+--
+Milorad Cerovac
+Senior School Teacher & Robotics Coordinator
+
+517-519 Orrong Road, Armadale, Victoria 3143
+Tel: (03) 9291 7900 | milorad.cerovac@kds.vic.edu.au | www.kds.vic.edu.au
+
+
+
+This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed.
+
+If you have received this email in error, please notify the sender. Please note that any views or opinions presented in this email are solely those of the author
+and do not necessarily represent those of The King David School. The recipient should check this email and any attachments for the presence of viruses.
+The King David School accepts no liability for any damage caused by any virus transmitted by this email.
+If you feel that this message is in any way offensive, please forward the entire message to support@kds.vic.edu.au
