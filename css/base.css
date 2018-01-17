@@ -71,8 +71,9 @@ td {
 	XXXbackground: #3a2e81 url("../img/logoRoboCatsLarge.png?fds") no-repeat 10px 5px;
 	XXXbackground-size: 100px auto;
 	XXXbackground: #3a2e81 url(../img/heroTeamFirstSign.png) no-repeat 0px -55px;
-	*/
 	background: #3a2e81 url(../img/heroTeamHouston_high.png) no-repeat 0px -25px;
+	*/
+	background: #3a2e81 url(../img/heroTeamHouston_obfuscated.png) no-repeat 0px -25px;
 	background-size: 1100px auto;
 	min-height: 445px;
 	color: white;

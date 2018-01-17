@@ -20,6 +20,9 @@ wikiFormat {
 	color: silver;
 }
 #header .contentSectionWrapper {
+	/*
 	background: #3a2e81 url(../img/heroTeamAll.jpg) no-repeat 0px -25px;
+	*/
+	background: #3a2e81 url(../img/heroTeam_obfuscated.jpg) no-repeat 0px -25px;
 	background-size: 1100px auto;
 }
