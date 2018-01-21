@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FRC 2018</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+</style>
+<!--script src="../common/js/phaser.2.2.2.box2d.min.js"></script-->
+<script src="../common/js/phaser.min.js"></script>
+<script type="text/javascript">
+
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+
+function preload() {
+    game.load.image('arrow', 	'img/arrow2.png');
+    game.load.image('cube', 		'img/cube1.png');
+}
+
+var sprite;
+var cubes;
+
+function create() {
+
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
+    game.stage.backgroundColor = '#66AACC';
+
+    sprite = game.add.sprite(400, 300, 'arrow');
+    sprite.anchor.setTo(0.5, 0.5);
+
+    //  Finally some cubes to collect
+    cubes = game.add.group();
+
+    //  We will enable physics for any cube that is created in this group
+    cubes.enableBody = true;
+
+    //  Here we'll create 12 of them evenly spaced apart
+    for (var i = 0; i < 2; i++)
+    {
+    	
+        //  Create a cube inside of the 'cubes' group
+        var cube = cubes.create(200 + (i * 70), 400, 'cube');
+
+        //  Let gravity do its thing
+        cube.body.gravity.y = 0;
+        cube.body.drag.x = cube.body.drag.y = 500;
+        cube.body.allowRotation = true;
+
+        //  Stop the cube disappearing off the field.
+	    cube.body.collideWorldBounds = true;
+    }
+    //cubes.body.drag.x = 100;
+    //  Enable Arcade Physics for the sprite
+    game.physics.enable(sprite, Phaser.Physics.ARCADE);
+
+    //  Tell it we don't want physics to manage the rotation
+    sprite.body.allowRotation = false;
+    sprite.body.collideWorldBounds = true;
+
+
+}
+
+function update() {
+
+	var hitPlatform = game.physics.arcade.collide(sprite, cubes); //, onCollide);
+    game.physics.arcade.collide(cubes, cubes); //,onCollide);
+    //game.physics.arcade.collide(sprite, platforms);
+    sprite.rotation = game.physics.arcade.moveToPointer(sprite, 60, game.input.activePointer, 500);
+	//s tars.body.velocity = 0;
+}
+
+/* do not delete, may be handy
+function onCollide(one, two) {
+}
+*/
+
+function render() {
+    game.debug.spriteInfo(sprite, 32, 32);
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

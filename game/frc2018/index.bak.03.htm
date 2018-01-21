@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FRC 2018</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+</style>
+<!--script src="../common/js/phaser.2.2.2.box2d.min.js"></script-->
+<script src="../common/js/phaser.min.js"></script>
+<script type="text/javascript">
+
+var metrics = {
+	gameW: 800
+	,gameH: 600
+}
+var score = {
+	points: 0
+	,add: function() {
+		this.points++;
+	}
+	,get: function() {
+		return (this.points < 10 ? "0" : "") + this.points;
+	}
+}
+
+var game = new Phaser.Game(metrics.gameW, metrics.gameH, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+
+function preload() {
+    game.load.image('arrow', 	'img/arrow2.png');
+    game.load.image('cube', 		'img/cube1.png');
+    game.load.image('obstacle', 	'img/obstacle.png');
+    game.load.image('goal', 		'img/goal.png');
+    game.load.image('floor', 	'img/floor3.png');
+}
+
+var sprite;
+var cubes;
+var obstacles;
+var goal;
+var scoreText
+
+function create() {
+
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
+    game.stage.backgroundColor = '#66AACC';
+    game.add.image (0,0, "floor");
+    goals = game.add.group();
+    sprite = game.add.sprite(80, 80, 'arrow');
+    sprite.anchor.setTo(0.5, 0.5);
+    //  Finally some cubes to collect
+    cubes = game.add.group();
+    obstacles = game.add.group();
+
+    //  We will enable physics for any cube that is created in this group
+    goals.enableBody = true;
+    cubes.enableBody = true;
+    obstacles.enableBody = true;
+    // NOt sure if I need this  
+
+    for (var iGoal = 0; iGoal < 1; iGoal++) {
+        var goal = goals.create(metrics.gameW - 100, metrics.gameH - 100, 'goal');
+        goal.body.immovable = true;
+    }
+    //  Here we'll create 12 of them evenly spaced apart
+    for (var iObs = 0; iObs < 1; iObs++) {
+        var obstacle = obstacles.create(200 + (iObs * 70), 200, 'obstacle');
+        obstacle.body.immovable = true;
+    }
+    var iPosStartX = 250;
+    var iPosX = 250; //iPosStartX;
+    var iPosStartY = 310;
+    for (var iCube = 0; iCube < 10; iCube++) {
+    	
+        //  Create a cube inside of the 'cubes' group
+        var cube = cubes.create(iPosX, iPosStartY, 'cube');
+
+        //  Let gravity do its thing
+        cube.body.gravity.y = 0;
+        cube.body.drag.x = cube.body.drag.y = 500;
+        cube.body.allowRotation = true;
+
+        //  Stop the cube disappearing off the field.
+	    cube.body.collideWorldBounds = true;
+        iPosX += 40;
+        if (iCube == 3 || iCube == 6 || iCube == 8) {
+        		// Move up to next row.
+        		iPosX = iPosStartX + 20;
+        		iPosStartX += 20;
+        		iPosStartY += 40;
+        }
+    }
+    //cubes.body.drag.x = 100;
+    //  Enable Arcade Physics for the sprite
+    game.physics.enable(sprite, Phaser.Physics.ARCADE);
+
+    //  Tell it we don't want physics to manage the rotation
+    sprite.body.allowRotation = false;
+    sprite.body.collideWorldBounds = true;
+	
+    scoreText = game.add.text(metrics.gameW - 70, metrics.gameH - 70, score.get(), { fontSize: '32px', fill: '#FFF' });
+    //scoreText = game.add.text(20, 20, score.points, { fontSize: '32px', fill: '#FFF' });
+
+}
+
+function update() {
+
+	var hitPlatform = game.physics.arcade.collide(sprite, cubes); //, onCollide);
+    game.physics.arcade.collide(obstacles, sprite);
+    game.physics.arcade.collide(cubes, cubes);
+    game.physics.arcade.collide(obstacles, cubes);
+    game.physics.arcade.overlap(goals, cubes, onOverlap);
+    //game.physics.arcade.collide(sprite, platforms);
+    sprite.rotation = game.physics.arcade.moveToPointer(sprite, 60, game.input.activePointer, 500);
+	//s tars.body.velocity = 0;
+}
+
+/* do not delete, may be handy
+function onCollide(one, two) {
+}
+*/
+function onOverlap(one, two) {
+	console.log("win");
+	score.add();
+	scoreText.text = score.get();
+	two.kill();
+}
+
+function render() {
+    game.debug.spriteInfo(sprite, 32, 32);
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
